@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <main>
+        <input type="checkbox" class="check-menu" name="check-menu" id="check-menu">        
+        <label for="check-menu" class="check-menu-label"></label>
+        <label for="check-menu" class="check-menu-label-close"></label>
+        <header class="white-bg fixed sup">
+            <div class="menu content-center">
+                <h1>logo</h1>
+                <nav class="menu-nav">
+                    <ul onclick="getElementById('check-menu').checked = false;">
+                        <li><a href="#top-jobs1">intro</a></li>
+                        <li><a href="#top-jobs2">top 3</a></li>
+                        <li><a href="#gallery">gallery</a></li>
+                        <li><a href="#recent-jobs">work</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="spacing-fixed-menu"></div>
+        <section class="section primary-bg">
+            <div class="content-center">
+                <div class="two-col">
+                    <div class="col">
+                        <h2>JANUARY BRINGS US FIREFOX 85</h2>
+                        <p>To wrap up January, we are proud to bring you the release of Firefox 85. In this version we are bringing you support for the :focus-visible pseudo-class in CSS and associated devtools, and the complete removal of Flash support from Firefox.</p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/js.svg" alt="imagem de um homem segurando a logo do css3, com uma mulher segurando a logo do javascript e um homem a logo do html5" title="programação web">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacing-fixed" id="top-jobs1"></div>
+        <section class="section white-bg">
+            <div class="content-center">
+                <div class="top-jobs">
+                    <h2>top 3 jobs</h2>
+                    <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+                    <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+                    <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various other improvements that are in the pipeline.</p>
+                </div>
+            </div>
+        </section>
+        <div class="spacing-fixed" id="top-jobs2"></div>
+        <section class="section primary-bg">
+            <div class="content-center  bg-bottom">
+                <header class="header-content">
+                    <h2>TOP 3 JOBS</h2>
+                    <p>here are some recent work.</p>
+                </header>
+                <div class="three-col">
+                    <article>
+                        <h3>First</h3>
+                        <p>This button would add a box to the row of key content boxes below the intro text. This should put the box there regardless of where the user is currently writing.</p>
+                    </article>
+                    <article class="col">
+                        <h3>Another site</h3>
+                        <p>I'd suggest having a popup that asks where in the row to insert the box (at the beginning or end), what title to give the box, what text to put in the box, and where the box should link to. The entire box should serve as a link to the destination page.</p>
+                    </article>
+                    <article class="col">
+                        <h3>Third one</h3>
+                        <p>You can also include a type attribute containing the MIME type of the resource, so a browser can quickly see what resources are on offer, and ignore ones that it doesn’t suppor</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <div class="spacing-fixed" id="gallery"></div>
+        <section class="section white-bg">
+            <div class="content-center">
+                <header class="header-content">
+                    <h2>GALLERY</h2>
+                    <p>Here are some of my pics</p>
+                </header>
+                <div class="three-col-gallery">
+                    <article class="gallery">
+                        <img src="https://source.unsplash.com/random/360x360?r=1" alt="imagem gerada aleatoriamente" title="imagem gerada aleatoriamente">
+                    </article>
+                    <article class="gallery">
+                        <img src="https://source.unsplash.com/random/360x360?r=2" alt="imagem gerada aleatoriamente" title="imagem gerada aleatoriamente">
+                    </article>
+                    <article class="gallery">
+                        <img src="https://source.unsplash.com/random/360x360?r=3" alt="imagem gerada aleatoriamente" title="imagem gerada aleatoriamente">
+                    </article>
+                    <article class="gallery">
+                        <img src="https://source.unsplash.com/random/360x360?r=4" alt="imagem gerada aleatoriamente" title="imagem gerada aleatoriamente">
+                    </article>
+                    <article class="gallery">
+                        <img src="https://source.unsplash.com/random/360x360?r=5" alt="imagem gerada aleatoriamente" title="imagem gerada aleatoriamente">
+                    </article>
+                    <article class="gallery">
+                        <img src="https://source.unsplash.com/random/360x360?r=6" alt="imagem gerada aleatoriamente" title="imagem gerada aleatoriamente">
+                    </article>
+                </div>
+            </div>
+        </section>
+        <div class="spacing-fixed" id="recent-jobs"></div>
+        <section class="section primary-bg">
+            <div class="content-center bg-bottom">
+                <header class="header-recent">
+                    <h2>RECENT JOBS</h2>
+                </header>
+                <div class="three-col" class="jobs-recent">
+                    <article>
+                        <h3>A good one</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora quibusdam in esse, rerum provident nesciunt voluptate minima tempore, ad, non blanditiis ipsam dignissimos sint alias consectetur eligendi magnam placeat.</p>
+                    </article>
+                    <article class="col">
+                        <h3>Great job</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora quibusdam in esse, rerum provident nesciunt voluptate minima tempore, ad, non blanditiis ipsam dignissimos sint alias consectetur eligendi magnam placeat.</p>
+                    </article>
+                    <article class="col">
+                        <h3>The best</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora quibusdam in esse, rerum provident nesciunt voluptate minima tempore, ad, non blanditiis ipsam dignissimos sint alias consectetur eligendi magnam placeat.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section white-bg">
+            <div class="content-center">
+                <div class="top-jobs">
+                    <h2>top 3 jobs</h2>
+                    <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+                    <div class="scrollable">
+                        <table>
+                            <caption>
+                                <em>Pricing table</em>
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th>Title 1</th>
+                                    <th>Title 2</th>
+                                    <th>Title 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Content 1</td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Content 1</td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Content 1</td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">SPAN DOWN</td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Footer 1</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacing-fixed" id="contact"></div>
+        <section class="section primary-bg">
+            <div class="content-center">
+                <div class="two-col">
+                    <div class="col">
+                        <h2>CONTACT US</h2>
+                        <p>To wrap up January, we are proud to bring you the release of Firefox 85. In this version we are bringing you support for the :focus-visible pseudo-class in CSS and associated devtools, and the complete </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/contact.svg" alt="imagem de um homem segurando a logo do css3, com uma mulher segurando a logo do javascript e um homem a logo do html5" title="programação web">
+                    </div>
+                </div>
+                    <fieldset class="form-grid">
+                        <legend>Contact me</legend>
+                        <div class="form-group">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="First name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Last name">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" placeholder="E-mail">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submite">Send message</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Feito por Bruno Henrique Guinerio <span>&hearts;</span></p>
+        </footer>
+        <div class="scroll-top">
+            <a href="#"><img src="assets/img/seta.svg" alt="seta apontando para cima"></a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,441 @@
+
+:root{
+    --primary-color: #0a1128;
+    --white-color: #fff;
+    --dark-gray-color: #dddddd;
+    --light-gray-color: #ececec;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4.5rem;
+}
+h3{
+    font-size: 4rem;
+}
+a:link,
+a:visited,
+a:active{
+    text-decoration: none;
+}
+.white-bg{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+.primary-bg{
+    background-image: url('../img/background.svg');
+    background-position: center center;
+    background-size: cover;
+    color: var(--white-color);
+}
+.content-center{
+    overflow: hidden;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.section{
+    min-height: 100vh;
+}
+.two-col{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+}
+.two-col .col:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two-col img{
+    width: 100%;
+}
+.two-col h2{
+    font-size: 5.5rem;
+    color: var(--white-color);
+    position: relative;
+    top: 4rem;
+    line-height: 1.45;
+}
+.two-col p{
+    position: relative;
+    bottom: 4rem;
+    font-size: 2rem;
+    color: var(--white-color);
+    line-height: 1.45;
+}
+.two-col .col:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+.menu-nav ul{
+    display: flex;
+    flex-direction: row;
+}
+.menu-nav li{
+    list-style: none;
+}
+.menu-nav a{
+    display: block;
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+.menu-nav a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.2rem;
+    bottom: 1rem;
+    left: 50%;
+    background-color: crimson;
+    transition: all 300ms ease-in-out;
+}
+.menu-nav a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+.sup{
+    z-index: 1;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.spacing-fixed,
+.spacing-fixed-menu{
+    width: 100%;
+    height: 6.8rem;
+}
+.top-jobs{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.top-jobs h2{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+.top-jobs p{
+    margin: 3rem 0;
+    font-size: 2.2rem;
+}
+.three-col,
+.three-col-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    counter-reset: myCounter;
+    gap: 3rem;
+}
+.header-recent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40vh;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: center;
+}
+.header-content p{
+    margin-top: 3fr;
+    font-size: 2.5rem;
+}
+.header-content h2{
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+.three-col article h3{
+    position: relative;
+    left: 7rem;
+}
+.three-col article h3::before{
+    font-size: 7rem;
+    position: absolute;
+    left: -7rem;
+    top: -2rem;
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    transform: rotate(10deg);
+}
+.three-col article p{
+    margin-top: 3rem;
+    font-size: 2.2rem;
+}
+.three-col-gallery .gallery{
+    overflow: hidden;
+}
+.three-col-gallery .gallery img{
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+.three-col-gallery .gallery img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(4deg);
+}
+table, td, th, tfoot{
+    border: 0.1rem solid var(--light-gray-color);
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 3rem;
+}
+table{
+    min-width: 100%;
+}
+table caption{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: -1rem;
+}
+thead, tfoot{
+    background-color: var(--dark-gray-color);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 2rem;
+    padding: 5rem 0;
+}
+span{
+    color: #F00;
+}
+.scroll-top a,
+.scroll-top{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #00000038;
+}
+.scroll-top a img{
+    display: block;
+    margin: auto;
+}
+.form{
+    grid-column: span 2;
+}
+.form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.form-group{
+    flex: 1 1 32rem;
+}
+.form-grid legend{
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-bottom: 5rem;
+}
+.form-grid label{
+    display: block;
+    font-size: 3rem;
+    text-align: left;
+}
+.full-width{
+    width: 100%;
+    flex: 1 1 100%
+}
+.form-grid input::placeholder,
+.form-grid textarea::placeholder{
+    color: #616161;
+}
+.form-grid input,
+.form-grid textarea{
+    width: 100%;
+    padding: 0.2rem 1rem;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+.form-grid input{
+    height: 5rem;
+}
+.form-grid textarea{
+    height: 12rem;
+    resize: none;
+}
+.check-menu{
+    display: none;
+}
+.form-grid button{
+    cursor: pointer;
+    margin-bottom: 3rem;
+    background-color: var(--primary-color);
+    border: 0.4rem solid var(--white-color);
+    color: white;
+    font-size: 3rem;
+    padding: 1rem 3rem;
+    transition: all 400ms ease-in-out;
+}
+.form-grid button:hover{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+.scrollable{
+    overflow: auto;
+}
+@media all and (max-width: 800px){
+    .two-col,
+    .three-col,
+    .three-col-gallery{
+        grid-template-columns: 1fr;
+    }
+    .two-col h2,
+    .two-col p{
+        text-align: center;
+    }
+    .two-col h2{
+        top: 0;
+    }
+    .two-col p{
+        bottom: 0;
+    }
+    .top-jobs{
+        width: 100%;
+    }
+    table caption{
+        margin: 0;
+    }
+    .bg-bottom{
+        padding-bottom: 10rem;
+    }
+    td,th{
+        width: 40%;
+    }
+    .three-col-gallery .gallery{
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+    .three-col article h3{
+        font-size: 3rem;
+    }
+    .three-col article h3::before{
+        font-size: 6.8rem;
+    }
+    .check-menu-label::after{
+        content: '𝄘';
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        color: black;
+        z-index: 2;
+        cursor: pointer;
+        font-size: 4rem;
+    }
+    .check-menu:not(.check-menu:checked)~.check-menu-label-close{
+        display: none;
+    }
+    .check-menu-label-close::after{
+        content: '✕';
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        color: black;
+        z-index: 2;
+        cursor: pointer;
+        font-size: 4rem;
+    }
+    .fixed{
+        display: none;
+        height: 100vh;
+    }
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .check-menu:checked~.fixed{
+        display: block;
+    }
+    .check-menu:checked~.check-menu-label{
+        display: none;
+    }
+    .menu-nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .spacing-fixed-menu{
+        width: 0;
+        height: 0;
+    }
+    .header-content,
+    .header-recent{
+        text-align: center;
+    }
+}
+@media (min-width: 600px) and (max-width: 900px){
+    .top-jobs{
+        width: 75%;
+    }
+    .three-col-gallery .gallery{
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+    .three-col-gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+@media (min-width: 901) and (max-width: 1199px){
+    .three-col-gallery .gallery{
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+    .three-col-gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 801px) and (max-width: 1199px){
+    .top-jobs{
+        width: 75%;
+    }
+    .three-col article h3{
+        font-size: 2.5rem;
+    }
+}
